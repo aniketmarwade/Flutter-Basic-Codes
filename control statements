@@ -1,0 +1,161 @@
+// if example
+void main(){
+  
+  if(10>2){
+    print('hello');
+  }
+}
+
+op:- hello
+===============================
+
+// if else example
+void main(){
+  
+  if(10%2==0){
+    print('even');
+  }
+else{
+  print('odd');
+}
+}
+op:-even
+=================================
+
+// else if ladder example
+void main(){
+  int n=2;
+  if(n==1){
+    print('one');
+  }
+else if(n==2){
+  print('two');
+}
+  else if(n==3){
+    print('three');
+  }
+  else{
+    print('invalid number');
+  }
+}
+OP:-two
+======================================================
+//switch case example
+void main(){
+  
+  int n=3;
+  
+  switch(n){
+    case 1:
+      print('one');
+      break;
+      
+    case 2:
+      print('two');
+      break;
+      
+    case 3:
+      print('three');
+      break;
+      
+    default:
+      print('invalid Number');
+  }
+}
+OP:-three
+==================================================
+//while loop example
+void main(){
+ int i=1;
+  
+  while(i<=5){
+    
+    print(1);
+    i++;
+  }
+}
+OP:-1
+1
+1
+1
+1
+=================================================
+// do while loop example
+
+void main(){
+  
+  int i=1;
+  do{
+    print(1);
+    i++;
+  }
+    while(i<=10);
+  }
+OP:-
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+==================================================
+//for loop example
+
+void main(){
+  
+  for(int i=1; i<=5; i++){
+    print(1);
+  }
+}
+OP:-1
+1
+1
+1
+1
+====================================================
+//for in loop
+void main(){
+  
+  List<int> l =[10,20,30,40,50];
+  for (var x in 1){
+    print(x);
+  }
+}
+
+=================================================
+//for each loop example
+void main(){
+  
+  List<int> l =[10,20,30,40,50];
+  
+  l.forEach(show);
+}
+
+void show(var x){
+  print(x);
+}
+OP:-10
+20
+30
+40
+50
+=================================================
+//for each loop example
+void main(){
+  
+  List<int> l =[10,20,30,40,50];
+  
+  l.forEach((var x)
+  {
+   print(x);
+  });
+}
+OP:- 10
+20
+30
+40
+50
