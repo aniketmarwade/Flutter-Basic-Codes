@@ -1,0 +1,111 @@
+/Expanded Widget
+import'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    )
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body:Row(
+        children: <Widget>[
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.red,
+
+          ),
+           Expanded(
+         child: Container(
+
+            width: 50,
+            height: 50,
+            color:Colors.blue,
+          ),
+           
+),
+  
+        ],
+      )
+      
+    );
+  }
+}
+
+
+//flex in expanded
+import'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    )
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+   
+    return Scaffold(
+    appBar: AppBar(),
+      body:Row(
+        children: <Widget>[ 
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.red,
+
+          ),
+           Expanded(
+          flex:1,
+         child: Container(
+
+            width: 50,
+            height: 50,
+            color:Colors.blue,
+          ),
+          
+           
+),
+  
+  Expanded(
+flex:2,
+         child: Container(
+
+            width: 50,
+            height: 50,
+            color:Colors.blue,
+          ),
+          
+           
+),
+  Expanded(
+       flex:2,
+         child: Container(
+
+            width: 50,
+            height: 50,
+            color:Colors.blue,
+          ),
+          
+           
+),
+  
+        ],
+      )
+      
+    );
+  }
+}
