@@ -1,0 +1,124 @@
+//stack
+
+import 'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    )
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        alignment: Alignment.center,
+        children: <Widget>[
+        Container(
+          
+          width: 300,
+          height: 300,
+          color: Colors.blue,
+          ),
+
+          Container(
+          
+          width: 200,
+          height: 200,
+          color: Colors.brown,
+          ),
+Container(
+          
+          width: 100,
+          height: 100,
+          color: Colors.green
+          ),
+
+      ],),
+    );
+  }
+}
+
+
+//STACK EXAMPLE
+
+import 'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    )
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+   children: <Widget>[
+     Align(
+alignment: Alignment.topCenter,
+child: Container(
+  width:MediaQuery.of(context).size.width,
+  height: MediaQuery.of(context).size.height*0.5,
+  color: Colors.orange,
+),
+
+     ),
+
+
+
+     Align(
+       alignment:Alignment.bottomCenter,
+       child: Container(
+         width: MediaQuery.of(context).size.width,
+         height: MediaQuery.of(context).size.height*0.5,
+        decoration: BoxDecoration(
+          color:Colors.blue,
+          borderRadius: BorderRadius.vertical(top:Radius.circular(55),)
+        ), 
+       
+       ),
+     )
+   ],
+      ),
+    );
+  }
+}
+
+//icon on image using stack
+import 'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    )
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+      alignment: Alignment.bottomLeft,
+      children: <Widget>[
+        Image.asset('images/img1.jpg', fit:BoxFit.fill,),
+        Icon(Icons.favorite, color: Colors.red, size: 50),
+      ],
+      ),
+    );
+  }
+}
