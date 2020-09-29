@@ -1,0 +1,40 @@
+//nullaware operator ?.
+class Abc{
+  
+  void show(){
+    print('show() called');
+  }
+}
+
+void main(){
+  
+  Abc obj = Abc();//server
+  obj?.show();// null aware operator, it auto matically checks for the null 
+}
+
+
+
+--------------------------------
+// cascading operator
+class Abc{
+  
+  void show(){
+    print('show() called');
+  }
+
+ void test(){
+   
+   print('test() called again');
+ }
+}
+
+void main(){
+  
+ Abc()
+  ..show()
+  ..test();
+  
+}
+
+op:-show() called
+test() called again
