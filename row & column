@@ -1,0 +1,94 @@
+/Row with text
+import 'package:flutter/material.dart';
+
+void main(){
+
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home:MyApp(),
+  ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+     appBar: AppBar(),
+      body:Row(
+        children: <Widget>[
+          Text('Ram'),
+          Text('Shyam'),
+          Text('pavan'), 
+        ],
+      )
+      
+    );
+  }
+}
+
+//row with container
+import 'package:flutter/material.dart';
+
+void main(){
+
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home:MyApp(),
+  ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+     appBar: AppBar(),
+      body:Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+         
+         Container(width: 50,
+         height: 50,
+         color: Colors.green,
+         ),
+
+        ],
+      )
+      
+    );
+  }
+}
+
+//colum
+import 'package:flutter/material.dart';
+
+void main(){
+
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home:MyApp(),
+  ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+     appBar: AppBar(),
+      body:Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          Container(width: 200,
+          height:50,
+          color: Colors.green,
+          ),
+
+
+        ],),
+      
+    );
+  }
+}
