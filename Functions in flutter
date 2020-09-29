@@ -1,0 +1,78 @@
+// Function
+//[ ] --> for optional positional parameter
+void main(){
+  
+  show(10);//positional parameters
+  show(5,7);
+  show(100,200,300);
+ 
+}
+
+void show (int a,[int b, int c]){
+  
+  print('a=$a');
+  print('b=$b');
+  print('c=$c');
+  
+}
+
+
+op->
+a=10
+b=null
+c=null
+
+a=5
+b=7
+c=null
+
+a=100
+b=200
+c=300
+
+---------------------------------
+
+//named parameters({ })
+//its value must be passed using parameterNmame:value
+void main(){
+  
+show(b: 30);
+show(c:10, b:20, a:10);  
+}
+
+void show ({int a,int b, int c}){
+  
+  print('a=$a');
+  print('b=$b');
+  print('c=$c');
+  
+}
+
+O/P:->
+a=null
+b=30
+c=null
+a=10
+b=20
+c=10
+----------------------------------
+
+//combination of positional & named parameters
+void main(){
+  
+ show(10,b:50,c:70);
+  
+}
+
+void show (int a,{int b, int c}){
+  
+  print('a=$a');
+  print('b=$b');
+  print('c=$c');
+  
+}
+
+O/P:->
+a=10
+b=50
+c=70
