@@ -1,0 +1,98 @@
+class Student{
+  
+  int rollno;
+  String name;
+  double percentage;
+  
+  Student(int r, String n, double p){
+    rollno=r;
+    name=n;
+    percentage=p;
+  }
+  void showdata(){
+    
+    print('Rollno=$rollno');
+    print('name=$name');
+    print('percentage=$percentage');
+  }
+}
+
+void main(){
+  
+  Student s = Student(101, 'Ram', 58.34);
+  s.showdata();
+}
+
+O/P:-Rollno=101
+name=Ram
+percentage=58.34
+===========================================
+// constructor with named parameters
+
+class Student{
+  
+  int rollno;
+  String name;
+  double percentage;
+  
+  Student({this.rollno, this.name, this.percentage});//refers to matching name
+    
+    
+    
+  
+  void showdata(){
+    
+    print('Rollno=$rollno');
+    print('name=$name');
+    print('percentage=$percentage');
+  }
+}
+
+void main(){
+  
+  Student s = Student(rollno:301, name:'Aniket', percentage: 75.10);
+  s.showdata();
+}
+O/P:-Rollno=301
+name=Aniket
+percentage=75.1
+
+========================
+// constructor with named parameters
+
+class Student{
+  
+  int rollno;
+  String name;
+  double percentage;
+  
+  Student({this.rollno, this.name, this.percentage});//refers to matching name
+    
+    Student.withNoPercent({this.name, this.rollno});//named constructor
+    
+ 
+  
+  void showdata(){
+    
+    print('Rollno=$rollno');
+    print('name=$name');
+    print('percentage=$percentage');
+  }
+}
+
+void main(){
+  
+  Student s = Student(rollno:301, name:'Aniket', percentage: 75.10);
+  s.showdata();
+  
+  Student s2 = Student.withNoPercent(name:'pavan', rollno:52);
+  s2.showdata();
+  
+  
+}
+OP:-Rollno=301
+name=Aniket
+percentage=75.1
+Rollno=52
+name=pavan
+percentage=null
