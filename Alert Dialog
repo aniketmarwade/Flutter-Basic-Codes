@@ -1,0 +1,107 @@
+//alert dialog
+
+import 'package:flutter/material.dart';
+
+void main()
+{
+runApp(MaterialApp(
+  debugShowCheckedModeBanner: false,
+  home:MyApp(),
+  
+
+),
+);
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+
+        child: RaisedButton(
+          child:Text('click me'),
+          onPressed:(){
+
+            AlertDialog obj= AlertDialog(
+
+              title:Text('warning'),
+              content:Text('Are you sure to delete it'),
+            );
+
+            showDialog(context: context,
+            builder: (BuildContext context)=>obj,
+            
+            );
+        
+          }),
+        ),
+      );     
+    
+  }
+}
+---------------------------------------------------------
+
+// alert dialouge customised
+import 'package:flutter/material.dart';
+
+void main()
+{
+runApp(MaterialApp(
+  debugShowCheckedModeBanner: false,
+  home:MyApp(),
+  
+
+),
+);
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+
+        child: RaisedButton(
+          child:Text('click me'),
+          onPressed:(){
+
+            AlertDialog obj= AlertDialog(
+
+              title:Text('warning'),
+              content:Text('Are you sure to delete it'),
+              actions: <Widget>[
+                FlatButton(
+                  child: Text('yes'),
+                  onPressed: (){
+                    print('you pressed yes');
+                  },
+              textColor: Colors.green,
+                ),
+                FlatButton(
+                  child: Text('no'),
+                  onPressed: (){
+                    print('you pressed no');
+                  },
+                 textColor: Colors.red,
+                )
+              ]
+              ,
+            );
+
+            showDialog(context: context,
+            builder: (BuildContext context)=>obj,
+            
+            );
+        
+          }),
+        ),
+      );     
+    
+  }
+
+}
+
+----------------------------------------------
