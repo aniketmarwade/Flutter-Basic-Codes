@@ -92,3 +92,53 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+//row in column
+import 'package:flutter/material.dart';
+
+void main(){
+
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home:MyApp(),
+  ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+     appBar: AppBar(),
+      body:Column(
+children: <Widget>[
+
+
+  Row(
+ mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+ children: <Widget>[
+
+
+   Text('Ram'),
+   Text("Sita"),
+ ],
+  ),
+
+Row(
+   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  children: <Widget>[
+
+
+  Text('pavan'),
+  Text('sita'),
+],
+),
+
+],
+
+      ),
+      
+    );
+  }
+}
