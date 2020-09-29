@@ -1,0 +1,35 @@
+//toast
+
+import'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    ),
+  );
+}
+ 
+ class MyApp extends StatelessWidget {
+   @override
+   Widget build(BuildContext context) {
+     return Scaffold(
+     body: Center(
+       child: RaisedButton(child: Text('click me'),
+       onPressed: (){
+
+         Fluttertoast.showToast(msg: 'you clicked button',
+         gravity:ToastGravity.BOTTOM,
+         backgroundColor: Colors.green,
+         
+         );
+        
+       },
+       ),
+       ),
+     );
+   }
+ }
