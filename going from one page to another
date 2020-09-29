@@ -1,0 +1,71 @@
+----going from one screen to another----
+//main.dart
+import'package:flutter/material.dart';
+import 'package:oneapp/page1.dart';
+
+
+void main(){
+ runApp(
+    MyApp(),
+    );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Page1(),
+    );
+  }
+}
+
+//page1.dart
+import'package:flutter/material.dart';
+import 'package:oneapp/page2.dart';
+
+
+class Page1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body:Row(
+     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+     children: <Widget>[
+
+       RaisedButton(
+         child:Text('Go to Page 2'),
+         onPressed: (){
+
+         },
+       ),
+     ],
+    ));
+  }
+}
+
+//page2.dart
+import'package:flutter/material.dart';
+
+
+class Page2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar:AppBar(),
+      body:Center(child:RaisedButton(
+        child: Text('Go Back to Page1'),
+
+        onPressed: (){
+          Navigator.pop(context);
+        },
+      ),
+      
+     
+      
+      )
+    
+    );
+  }
+}
