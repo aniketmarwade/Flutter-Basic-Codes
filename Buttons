@@ -1,0 +1,244 @@
+// Raised button 
+import'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    ),
+  );
+}
+ 
+ class MyApp extends StatelessWidget {
+   @override
+   Widget build(BuildContext context) {
+     return Scaffold(
+       body: Center(
+        child:
+         RaisedButton(
+           child: Text('click me'),
+           onPressed: (){
+            //
+           },
+           color: Colors.yellowAccent,
+           elevation: 5,
+           padding: EdgeInsets.symmetric(vertical:5, horizontal:50),
+           splashColor: Colors.red,
+           onLongPress: (){
+             //
+           },
+         )
+       ),
+     );
+   }
+ }
+
+
+------------------------------------------------------------
+// Raised Button using anonymous function
+import'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    ),
+  );
+}
+ 
+ class MyApp extends StatelessWidget {
+   @override
+   Widget build(BuildContext context) {
+     return Scaffold(
+       body: Center(
+        child:
+         RaisedButton(
+           child: Text('Click Here'),
+           onPressed: (){
+             print('hello world');
+           },
+         )
+       ),
+     );
+   }
+ }
+
+--------------------------------------------------
+//icon button
+import'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    ),
+  );
+}
+ 
+ class MyApp extends StatelessWidget {
+   @override
+   Widget build(BuildContext context) {
+     return Scaffold(
+       body: Center(
+        child:
+         IconButton(
+           icon: Icon(Icons.pages),
+           onPressed: (){
+             print('hello world');
+           },
+         )
+       ),
+     );
+   }
+ }
+
+---------------------------------------
+
+//raised button.icon
+import'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    ),
+  );
+}
+ 
+ class MyApp extends StatelessWidget {
+   @override
+   Widget build(BuildContext context) {
+     return Scaffold(
+      appBar: AppBar(),
+       body: Center(
+        child: RaisedButton.icon(
+          onPressed: (){},
+          icon: Icon(Icons.mic),
+          label: Text('this is done'),
+          color: Colors.blue,
+          shape: RoundedRectangleBorder(
+            borderRadius:BorderRadius.circular(30),
+          ),
+          ),
+       ),
+     );
+   }
+ }
+
+-----------------------------------------------------
+//outlineButton
+
+import'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    ),
+  );
+}
+ 
+ class MyApp extends StatelessWidget {
+   @override
+   Widget build(BuildContext context) {
+     return Scaffold(
+      appBar: AppBar(),
+       body: Center(
+child:OutlineButton(
+         child: Text('hello'),
+         
+         onPressed:(){
+//
+
+         },
+         onLongPress:(){
+//
+
+         },
+  
+  
+       ),
+       ),
+     );
+   }
+ }
+
+----------------------------------------------------
+//floating action button
+import'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    ),
+  );
+}
+ 
+ class MyApp extends StatelessWidget {
+   @override
+   Widget build(BuildContext context) {
+     return Scaffold(
+      appBar: AppBar(),
+       body: Center(
+child:FloatingActionButton(
+         child: Icon(Icons.message),
+         
+         onPressed:(){
+//
+
+         },
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.red,
+        elevation :10,
+  
+  
+       ),
+       ),
+     );
+   }
+ }
+
+------------------------------------------------
+//iconbutton
+import'package:flutter/material.dart';
+
+void main(){
+
+  runApp(
+    MaterialApp(
+debugShowCheckedModeBanner: false,
+home: MyApp(),
+    ),
+  );
+}
+---------------------------
+ //tooltip
+ class MyApp extends StatelessWidget {
+   @override
+   Widget build(BuildContext context) {
+     return Scaffold(
+      appBar: AppBar(),
+       body: Center(
+child:IconButton(
+
+  icon:Icon(Icons.delete),
+  onPressed: (){},
+  tooltip: "i am button",
+)
+       ),
+     );
+   }
+ }
