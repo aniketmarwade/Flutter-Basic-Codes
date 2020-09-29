@@ -1,0 +1,16 @@
+
+// datat type conversion example
+void main(){
+  
+  String s ="10";
+  int a=int.parse(s);
+  print(a);
+
+  String s1= "45.5";
+  double b = double.parse(s1);
+  print(b);
+  
+}
+OP:-
+10
+45.5
