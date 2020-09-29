@@ -1,0 +1,11 @@
+//inheritance
+//super class
+class A{
+  
+  
+}
+// subclass
+class B extends A{
+  
+  
+}
